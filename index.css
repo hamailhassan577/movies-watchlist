@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+.margin {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: white;
+
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+hr {
+    width: 80%;
+    margin-top: 30px;
+    color: #121212;
+    border-color: #121212;
+}
+
+.boxed {
+    margin: 0 auto;
+    max-width: 600px;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #121212;
+}
+
+.hero {
+    color: white;
+    position: relative;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content > h1 {
+    font-weight: 800;
+}
+
+.hero-content > p {
+    font-weight: 600;
+}
+
+.hero-content {
+    display: flex;
+    align-items: baseline;
+    gap: 150px;
+    z-index: 999;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    background-color: #2E2E2F;
+    color: white;
+    border: none;
+    width: 50%;
+    padding: 1em 30px;
+    border-radius: 0.25em 0 0 0.25em;
+    font-family: 'Inter', sans-serif;
+}
+
+.search-bar:focus {
+    outline: none;
+    border: none;
+}
+
+.search-btn {
+    color: white;
+    background-color: #4B4B4B;
+    font-weight: 500;
+    border: none;
+    padding: 1em 2.5em;
+    border-radius: 0 0.25em 0.25em 0;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.explore-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+    color: #2E2E2F;
+    font-weight: 800;
+    
+}
+
+.movie, .movie-info, .title, .genre, .add-to-watchlist {
+    display: flex;
+}
+
+.movie {
+    margin-top: 2em;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    /* width: 70%; */
+}
+
+.movie-poster {
+    width: 25%;
+}
+
+.movie-info {
+    flex-direction: column
+}
+
+.title, .genre {
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 15px;
+    padding-right: 0;
+}
+
+.add-to-watchlist {
+    align-items: baseline;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.title {
+    gap: 5px;
+}
+
+.genre {
+    font-size: 12px;
+}
+
+.desc {
+    color: #A5A5A5;
+    width: 100%;
+
+}
+
